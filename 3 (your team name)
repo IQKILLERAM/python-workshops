@@ -1,0 +1,4 @@
+print("Hi , to get your team name anser all the quastions ")
+city_name = input("\nwhat is the name of the city u grow in ?")
+pet_name = input("what is the name of your pet ?")
+print("the name of your team is " + city_name + pet_name)
