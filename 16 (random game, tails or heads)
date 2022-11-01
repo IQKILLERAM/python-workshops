@@ -1,0 +1,9 @@
+import random 
+
+r = random.randint(1,2)
+p = int(input("what do you wanna choose ? tails(1) , heads(2)"))
+if p == r:
+ print("u win .")
+else:
+  print("lose")
+print(r)
