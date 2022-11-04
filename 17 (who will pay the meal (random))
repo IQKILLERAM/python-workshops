@@ -1,0 +1,12 @@
+import random
+# Split string.
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(",")
+# first way.
+len = len(names)
+random_len = random.randint(0,len )
+n = names[random_len]
+print(f"{n} is going to buy the meal today .")
+# second way.
+nn = random.choice(names)
+print(f"{nn} is going to buy the meal today .")
