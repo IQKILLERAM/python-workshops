@@ -8,7 +8,12 @@ position = input("Where do you want to put the treasure? ")
 
 x = int(position[0])
 y = int(position[1])
-yy = (map[y -1])
-yy[x  -1] = "X"
+
+# first way
+# yy = (map[y -1])
+# yy[x  -1] = "X"
+
+# second way 
+# map[x - 1][y - 1] = "X"
 
 print(f"{row1}\n{row2}\n{row3}")
