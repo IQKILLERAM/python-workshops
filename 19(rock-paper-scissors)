@@ -1,0 +1,52 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___) 
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+import random
+q = int(input("what do you choose? Type 0 for rock,1 for paper or 2 for scissors.\n "))
+if q >= 3:
+  print("You typed an invalid number .")
+else:
+ list = [rock, paper, scissors]
+ qq = list[q]
+
+ print("You select" + qq)
+
+ Random = random.randint(0 , len(list) -1)
+ iq_select = list[Random]
+ print(f"IQ select {iq_select}")
+
+ if iq_select == qq:
+   print("draw")
+ elif iq_select == list[2] and qq == list[0]:
+   print("Nice You Win!!!")
+ elif iq_select == list[0] and qq == list[1]:
+   print("Nice You Win!!!")
+ elif iq_select == list[1] and qq == list[2]:
+   print("Nice You Win!!!")
+ else:
+   print("How you can be that noob, how you lose against the bot")
